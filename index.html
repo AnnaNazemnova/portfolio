@@ -7,21 +7,44 @@
 <style>
 footer{background:#3339; color:#FFFFFF; height:150px; text-align:center; margin-top:100px;font-family:JetBrainsMono-Regular;font-size:17px;width: auto;  }
 footer a {
-        color: #E0FFFF; text-decoration: none;margin:50px; }
+        color: #E0FFFF; text-decoration: none;margin:50px;width: auto; }
 		 footer a:hover { color:#8889a6;}
 		
 h4  {font-size:20px; font-family:JetBrainsMono-Regular;}
 h5 {text-align:center; font-size:15px; font-family:JetBrainsMono-Regular;}
 h1 {background-image: url('img/jh.png');background-size: cover;;font-family:ВИD Gras; padding:50px; margin:0px; margin-bottom:100px;
- font-size:50px; overflow: auto; width: auto;}
+ font-size:50px; overflow: auto;}
 body
 {background-image: url('img/kh.jpg'); background-size: cover; background-attachment:fixed ; margin:0px; }
 .text {background:#1e1f23; color:#E0FFFF; width:900px ;padding:35px; font-family:JetBrainsMono-Regular;line-height:20px; font-size:15px; 
- margin-left: auto; margin-right: auto; border-radius:50px; border:5px solid #FF8066; margin-bottom:100px;}
+ margin-left: auto; margin-right: auto; border-radius:50px; border:5px solid #FF8066; margin-bottom:100px;overflow: auto;}
 nav a {text-decoration:none; color:#000000;   padding:15px; font-family:PIXY; font-size:17px; background:#FF8066; border-radius:40px;
     margin-left: 8px; margin-right: 8px;   overflow: auto;  }
 nav a:hover{ background-color:#4D3C70;}
 nav {margin-top:50px;}
+
+ @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 1.5em;  margin: 5px;
+            }
+            .text {
+                font-size: 0.7em; width:300px;
+            }
+			footer a {
+                font-size: 0.7em; width:300px; margin:5px;
+            }
+			nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  grid-gap: 5px;
+  max-height: 300px;
+  overflow-y: auto;}
+			nav a {width: auto;margin: 5px;}
+       }
+		 img {
+    max-width: 100%; 
+    height: auto; }
+				
 @font-face {
     font-family: 'PIXY';
     src: url('font/pixy.eot');
@@ -495,7 +518,7 @@ uri=https%3A%2F%2Fidemo.bspb.ru%2Flogin%2Fsuccess&prefetch_uri
 NazemnovaA </a> 
 <a href='https://mail.google.com/mail' target="_blank" >
 <img src="icons/mail.png" > 
-Email: nazemnovaann@gmail.com </a> 
+Email: annanazemnova@mail.ru </a> 
 <a href='https://hh.ru/resume/ecd9d331ff08b555a80039ed1f5a70304f7746?' target="_blank" > 
 <img src="icons/hh1.png" > 
 Резюме </a> 
